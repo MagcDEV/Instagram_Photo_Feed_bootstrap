@@ -16,7 +16,7 @@
 
     <title>Instagram</title>
   </head>
-  <body>
+  <body id="body-id">
     <!-- Modal -->
     <div
       class="modal fade"
@@ -142,19 +142,264 @@
         </div>
       </div>
     </nav>
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <div class="grid-icons">
+      <button
+        type="button"
+        onclick="toogleModeTwo()"
+        class="btn btn-outline-secondary"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="26"
+          height="26"
+          fill="currentColor"
+          class="bi bi-grid-3x2-gap-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M1 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V4zM1 9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9z"
+          ></path>
+        </svg>
+        <span class="visually-hidden">Button</span>
+      </button>
+      <button
+        type="button"
+        onclick="toogleModeOne()"
+        class="btn btn-outline-secondary"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="26"
+          height="26"
+          fill="currentColor"
+          class="bi bi-square-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"
+          ></path>
+        </svg>
+        <span class="visually-hidden">Button</span>
+      </button>
+    </div>
+    <!--  one column feed   -->
+    <div class="container d-none" id="one-column-feed">
+      <div class="post">
+        <div class="post-header">
+          <h2>First Photo</h2>
+          <span>12/14</span>
+        </div>
+        <div>
+          <img src="https://picsum.photos/id/0/439/300" alt="imagen" />
+        </div>
+        <div>
+          <p><strong>24 likes</strong></p>
+          <p>
+            This is my first photo of the feed. This is a multiline comment for
+            testing purposes. I am learning to code with breathe code.
+          </p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+</svg>    Comment...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-header">
+          <h2>Some cute thing</h2>
+          <span>12/17</span>
+        </div>
+        <div>
+          <img src="https://picsum.photos/id/1002/439/300" alt="imagen" />
+        </div>
+        <div>
+          <p><strong>24 likes</strong></p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+            natus voluptas perferendis, officiis ipsam distinctio hic ea.
+          </p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+</svg>    Comment...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-header">
+          <h2>There is a Paparatzzi around</h2>
+          <span>12/17</span>
+        </div>
+        <div>
+          <img src="https://picsum.photos/id/1006/439/300" alt="imagen" />
+        </div>
+        <div>
+          <p><strong>24 likes</strong></p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+            natus voluptas perferendis, officiis ipsam distinctio hic ea.
+          </p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+</svg>    Comment...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-header">
+          <h2>And of course... food!</h2>
+          <span>12/17</span>
+        </div>
+        <div>
+          <img src="https://picsum.photos/id/1011/439/300" alt="imagen" />
+        </div>
+        <div>
+          <p><strong>24 likes</strong></p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+            natus voluptas perferendis, officiis ipsam distinctio hic ea.
+          </p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+</svg>    Comment...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-header">
+          <h2>And of course... food!</h2>
+          <span>12/17</span>
+        </div>
+        <div>
+          <img src="https://picsum.photos/id/1023/439/300" alt="imagen" />
+        </div>
+        <div>
+          <p><strong>24 likes</strong></p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+            natus voluptas perferendis, officiis ipsam distinctio hic ea.
+          </p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+</svg>    Comment...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-header">
+          <h2>And of course... food!</h2>
+          <span>12/17</span>
+        </div>
+        <div>
+          <img src="https://picsum.photos/id/1024/439/300" alt="imagen" />
+        </div>
+        <div>
+          <p><strong>24 likes</strong></p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+            natus voluptas perferendis, officiis ipsam distinctio hic ea.
+          </p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+</svg>    Comment...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-header">
+          <h2>And of course... food!</h2>
+          <span>12/17</span>
+        </div>
+        <div>
+          <img src="https://picsum.photos/id/1020/439/300" alt="imagen" />
+        </div>
+        <div>
+          <p><strong>24 likes</strong></p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+            natus voluptas perferendis, officiis ipsam distinctio hic ea.
+          </p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+</svg>    Comment...</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-header">
+          <h2>And of course... food!</h2>
+          <span>12/17</span>
+        </div>
+        <div>
+          <img src="https://picsum.photos/id/1015/439/300" alt="imagen" />
+        </div>
+        <div>
+          <p>
+          <p><strong>24 likes</strong></p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+            natus voluptas perferendis, officiis ipsam distinctio hic ea.
+          </p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+</svg>    Comment...
+</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-header">
+          <h2>And of course... food!</h2>
+          <span>12/17</span>
+        </div>
+        <div>
+          <img src="https://picsum.photos/id/101/439/300" alt="imagen" />
+        </div>
+        <div>
+          <p><strong>24 likes</strong></p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+            natus voluptas perferendis, officiis ipsam distinctio hic ea.
+          </p>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+</svg>    Comment...</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="grid-view" class="container-fluid">
+      <div class="row">
+        <div class="col image-col">
+          <img src="https://picsum.photos/id/0/439/300" alt="imagen" />
+        </div>
+        <div class="col image-col">
+          <img src="https://picsum.photos/id/1002/439/300" alt="imagen" />
+        </div>
+        <div class="col image-col">
+          <img src="https://picsum.photos/id/1006/439/300" alt="imagen" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col image-col">
+          <img src="https://picsum.photos/id/1011/439/300" alt="imagen" />
+        </div>
+        <div class="col image-col">
+          <img src="https://picsum.photos/id/1023/439/300" alt="imagen" />
+        </div>
+        <div class="col image-col">
+          <img src="https://picsum.photos/id/1024/439/300" alt="imagen" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col image-col">
+          <img src="https://picsum.photos/id/1020/439/300" alt="imagen" />
+        </div>
+        <div class="col image-col">
+          <img src="https://picsum.photos/id/1015/439/300" alt="imagen" />
+        </div>
+        <div class="col image-col">
+          <img src="https://picsum.photos/id/101/439/300" alt="imagen" />
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    -->
+    <script src="script.js"></script>
   </body>
 </html>
